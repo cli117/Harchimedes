@@ -1,0 +1,7 @@
+{
+  "display_name": "Telemetry HUD",
+  "description": "Real-time model, thinking effort, step/average TPS, token usage, cache hit rate, and context window HUD overlay.",
+  "command": "python3",
+  "args": ["server.py"],
+  "restart_policy": "always"
+}

@@ -1,0 +1,45 @@
+{
+  "agy-telemetry-hud": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "python3 ~/.gemini/config/plugins/agy-telemetry-hud/scripts/hook_handler.py SessionStart",
+        "timeout": 5
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "python3 ~/.gemini/config/plugins/agy-telemetry-hud/scripts/hook_handler.py PreInvocation",
+        "timeout": 5
+      }
+    ],
+    "PostInvocation": [
+      {
+        "type": "command",
+        "command": "python3 ~/.gemini/config/plugins/agy-telemetry-hud/scripts/hook_handler.py PostInvocation",
+        "timeout": 5
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.gemini/config/plugins/agy-telemetry-hud/scripts/hook_handler.py PostToolUse",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "python3 ~/.gemini/config/plugins/agy-telemetry-hud/scripts/hook_handler.py Stop",
+        "timeout": 5
+      }
+    ]
+  }
+}

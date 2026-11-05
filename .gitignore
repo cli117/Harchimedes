@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+sidecars/agy-telemetry-hud/hud_overlay_bin

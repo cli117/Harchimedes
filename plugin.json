@@ -1,0 +1,13 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "agy-telemetry-hud",
+  "displayName": "Telemetry HUD",
+  "version": "1.0.0",
+  "description": "Real-time model, thinking effort, step/average TPS, token usage, cache hit rate, and context window HUD for Antigravity App and CLI.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Show the current conversation Telemetry HUD inline",
+    "Open the real-time Telemetry HUD side panel",
+    "Summarize today's token usage and TPS across all conversations"
+  ]
+}
